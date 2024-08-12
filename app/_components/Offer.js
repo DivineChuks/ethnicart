@@ -10,7 +10,7 @@ const Offer = () => {
     },
     {
       img: "/safe.png",
-      title: "Safe and Secure Transactions",
+      title: "Safe Transactions",
       desc: "Ensuring that customers get what they order with our trusted riders, be sure  to receive those 5-star reviews ",
     },
     {
@@ -20,9 +20,11 @@ const Offer = () => {
     },
   ];
   return (
-    <div className="py-16 flex flex-col">
+    <div className="py-16 flex flex-col px-4 md:px-0">
       <div className="mx-auto max-w-[1200px] w-full">
-        <h2 className="mb-10 text-[36px] font-semibold">What We Offer</h2>
+        <h2 className="mb-10 text-[28px] md:text-[36px] font-semibold">
+          What We Offer
+        </h2>
         <div className="w-full grid grid-cols md:grid-cols-3 gap-14">
           {offers.map((offer) => (
             <div className="flex relative flex-1 items-center flex-col">

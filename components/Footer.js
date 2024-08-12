@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="flex flex-col py-16">
-      <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between">
+      <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between px-4 md:px-0">
         <div className="flex flex-col gap-6 ">
           <Image src="/ethnicart.png" width={130} height={40} />
           <div className="flex flex-row gap-6 mt-6">

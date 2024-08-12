@@ -32,7 +32,7 @@ const Cities = () => {
 
   return (
     <div className="flex flex-col py-14">
-      <div className="mx-auto max-w-[1200px] w-full">
+      <div className="mx-auto max-w-[1200px] w-full px-4 md:px-0">
         <div className="flex justify-between w-full mb-10">
           <h2 className="font-semibold text-3xl">Cities Available</h2>
           <Link href="/" className="underline text-xl font-semibold mr-20">
