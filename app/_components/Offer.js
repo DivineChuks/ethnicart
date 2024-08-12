@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { campton } from "../layout";
 import React from "react";
 
 const Offer = () => {
@@ -22,14 +22,20 @@ const Offer = () => {
   return (
     <div className="py-16 flex flex-col px-4 md:px-0">
       <div className="mx-auto max-w-[1200px] w-full">
-        <h2 className="mb-10 text-[28px] md:text-[36px] font-semibold">
+        <h2
+          className={`mb-10 ${campton.className} text-[28px] md:text-[36px] font-semibold`}
+        >
           What We Offer
         </h2>
         <div className="w-full grid grid-cols md:grid-cols-3 gap-14">
           {offers.map((offer) => (
             <div className="flex relative flex-1 items-center flex-col">
               <img src={offer.img} className="object-cover " />
-              <h2 className="mt-4 font-semibold text-2xl">{offer.title}</h2>
+              <h2
+                className={`mt-4 ${campton.className} font-semibold text-2xl`}
+              >
+                {offer.title}
+              </h2>
               <p className="text-center text-base mt-4">{offer.desc}</p>
             </div>
           ))}

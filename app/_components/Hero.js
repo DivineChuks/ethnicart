@@ -1,4 +1,5 @@
 import React from "react";
+import { campton } from "../layout";
 
 const Hero = () => {
   return (
@@ -6,10 +7,14 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black z-10 bg-opacity-40"></div>
       <div className="flex flex-col max-w-[1200px] mx-auto md:flex-row w-full">
         <div className="flex flex-col flex-1 gap-4">
-          <h2 className="text-3xl md:text-5xl leading-[35px] md:leading-[50px] z-50 font-semibold text-white">
+          <h2
+            className={`text-3xl md:text-5xl ${campton.className} leading-[35px] md:leading-[50px] z-50 font-semibold text-white`}
+          >
             Offer quality service? Find that perfect<br></br> match here
           </h2>
-          <p className="max-w-[500px] z-50 font-semibold text-white">
+          <p
+            className={`max-w-[500px] ${campton.className} z-50 font-semibold text-white`}
+          >
             Join our platform to reach eager customers looking for your
             services. Expand your reach, boost your sales, and watch your
             business grow effortlessly.
